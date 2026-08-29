@@ -27,7 +27,7 @@ connection {
 
 
   provisioner "file" {
-    source      = "conf/bootstrap.sh"
+    source      = "bootstrap.sh"
     destination = "/tmp/bootstrap.sh"
 }
     provisioner "remote-exec" {
