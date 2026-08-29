@@ -27,8 +27,8 @@ connection {
 
 
   provisioner "file" {
-  source      = "${path.module}/conf/bootstrap.sh"
-  destination = "/tmp/bootstrap.sh"
+    source      = "conf/bootstrap.sh"
+    destination = "/tmp/bootstrap.sh"
 }
     provisioner "remote-exec" {
     inline = [ 
