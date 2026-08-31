@@ -160,7 +160,6 @@ connection {
       "sudo sh /tmp/bootstrap.sh mysql ${var.environment}"
     ]
   }
-
 }
 
 
