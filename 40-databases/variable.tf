@@ -16,3 +16,7 @@ variable "domain_name" {
     default = "manikumar.online"
   
 }
+
+variable "mysql_root_password" {
+    type = string
+}
