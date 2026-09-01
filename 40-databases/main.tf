@@ -132,7 +132,7 @@ resource "aws_instance" "mysql" {
 
     tags = merge(
         {
-            Name = "${var.project}-${var.environment}-mysql"
+            Name = "${local.common_name}-mysql"
         },
         local.common_tags
     )
