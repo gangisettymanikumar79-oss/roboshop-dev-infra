@@ -44,6 +44,8 @@ resource "aws_iam_role_policy_attachment" "mysql" {
   role = aws_iam_role.mysql.name
 }
    
+
+   
   
 
 
