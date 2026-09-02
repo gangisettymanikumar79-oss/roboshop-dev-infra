@@ -8,7 +8,7 @@ variable "environment" {
 }
 
 variable "app_version" {
-    default = "dev"
+    default = "v3"
 }
 
 variable "zone_id" {
