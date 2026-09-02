@@ -1,6 +1,6 @@
 #!/bin/bash
 component=$1 #catalogue
-enviroment=$2 #dev
+environment=$2 #dev
 app_version=$3
 dnf install ansible -y
 mkdir -p /var/log/roboshop/
