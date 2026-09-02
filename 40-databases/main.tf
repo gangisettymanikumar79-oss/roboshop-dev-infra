@@ -15,7 +15,7 @@ resource "aws_instance" "mongodb" {
   
 resource "terraform_data" "mongodb" {
   triggers_replace = [
-    aws_instance.mongodb.id,
+    aws_instance.mongodb.id
     
 ]
 connection {
@@ -56,7 +56,7 @@ resource "aws_instance" "redis" {
   
 resource "terraform_data" "redis" {
   triggers_replace = [
-    aws_instance.redis.id,
+    aws_instance.redis.id
     
 ]
 connection {
@@ -97,7 +97,7 @@ resource "aws_instance" "rabbitmq" {
   
 resource "terraform_data" "rabbitmq" {
   triggers_replace = [
-    aws_instance.rabbitmq.id,
+    aws_instance.rabbitmq.id
     
 ]
 connection {
@@ -141,7 +141,7 @@ resource "aws_instance" "mysql" {
   
 resource "terraform_data" "mysql" {
   triggers_replace = [
-    aws_instance.mysql.id,
+    aws_instance.mysql.id
     
 ]
 connection {
@@ -152,10 +152,11 @@ connection {
 }
 
 
-  provisioner "file" {
+provisioner "file" {
     source      = "bootstrap.sh"
     destination = "/tmp/bootstrap.sh"
-}
+  }
+
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/bootstrap.sh",
