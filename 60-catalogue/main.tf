@@ -101,7 +101,7 @@ resource "aws_launch_template" "catalogue" {
   )
 }
 
-/* resource "aws_lb_target_group" "catalogue" {
+resource "aws_lb_target_group" "catalogue" {
   name     = "${local.common_name}-catalogue"
   port     = 8080
   protocol = "HTTP"
@@ -119,7 +119,7 @@ resource "aws_launch_template" "catalogue" {
     unhealthy_threshold = 2
   }
 }
- */
+
 
 
 
