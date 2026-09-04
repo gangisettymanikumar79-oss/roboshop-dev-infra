@@ -11,15 +11,15 @@ variable "app_version" {
     default = "v3"
 }
 
-variable "zone_id" {
+ /* variable "zone_id" {
     default = "Z04044114R8X5UCWP928"
   
-}
+} */
 
 variable "domain_name" {
     default = "manikumar.online"
   
-}
+} 
 
 variable "mysql_root_password" {
     type = string
