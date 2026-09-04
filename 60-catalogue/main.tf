@@ -123,8 +123,8 @@ resource "aws_lb_target_group" "catalogue" {
 
 resource "aws_autoscaling_group" "catalogue" {
   name                      = "${local.common_name}-catalogue"
-  max_size                  = 9
-  min_size                  = 3
+  max_size                  = 10
+  min_size                  = 1
   health_check_grace_period = 120
   health_check_type         = "ELB"
   desired_capacity          = 2
