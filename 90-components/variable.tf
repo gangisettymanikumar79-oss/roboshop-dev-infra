@@ -3,11 +3,11 @@ variable "environment" {
 }
 
 variable "zone_id" {
-    default = "Z07086101C1CVP7AT2UK4"
+    default = "Z04044114R8X5UCWP928"
 }  
 
 variable "domain_name" {
-    default = "daws90s.shop"
+    default = "manikumar.online"
 }
 
 variable "components" {
