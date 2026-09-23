@@ -8,7 +8,7 @@ terraform {
 
   backend "s3" {
     bucket       = "dns-remote-control-s3-buckets-dev1"
-    key          = "roboshop-dev-test.tfstate"
+    key          = "roboshop-dev1-test.tfstate"
     region       = "us-east-1"
     encrypt      = true
     use_lockfile = true # native S3 locking — Terraform 1.10+, no DynamoDB needed

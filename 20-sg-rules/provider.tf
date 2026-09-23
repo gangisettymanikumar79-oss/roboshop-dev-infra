@@ -9,7 +9,7 @@ terraform {
 
   backend "s3" {
     bucket          = "dns-remote-control-s3-buckets-dev1"
-     key            = "roboshop-sg-rules.tfstate"
+     key            = "roboshop-sg-rules1.tfstate"
     region          = "us-east-1"
     encrypt         = true
     use_lockfile    = true # Enables native S3 state locking (Terraform 1.10+)
